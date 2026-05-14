@@ -1,0 +1,21 @@
+phono3py --mesh="7 7 7" --fc-symmetry --lbte --ts 335 --wigner
+
+- Collision matrix shape (1, 1, 52, 186, 3, 52, 186, 3)
+- Averaging collision matrix elements by phonon degeneracy [28.318s]
+- Making collision matrix symmetric (built-in) [0.739s]
+----------- Thermal conductivity (W/m-k) with tetrahedron method -----------
+Diagonalize by scipy.linalg.lapack.dsyev sum=4.8e+05 d=-5.2e-10 [25077.882s]
+Pinv by ignoring 4047/29016 dims under abs(eig)<1.0e-08 (np.dot) [0.272s]
+#                         T(K)        xx         yy         zz         yz         xz         xy
+K_P_exact                 335.0       0.001      0.001      0.000     -0.000     -0.000      0.000
+(K_P_RTA)                 335.0       0.001      0.001      0.000     -0.000     -0.000      0.000
+K_C                       335.0       1.220      1.220      0.104      0.000     -0.000      0.000
+
+K_TOT=K_P_exact+K_C       335.0       1.221      1.221      0.105      0.000     -0.000      0.000
+----------------------------------------------------------------------------
+
+Thermal conductivity related properties were written into
+"kappa-m777.hdf5".
+Eigenvalues of collision matrix were written into "coleigs-m777.hdf5"
+Summary of calculation was written in "phono3py.yaml".
+-------------------------[time 2025-10-30 10:36:27]-------------------------
