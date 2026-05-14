@@ -1,4 +1,4 @@
-# Thermal Properties of the Nonporous NLO MOF MIRO-101
+# Thermal Properties of MOF MIRO-101
 
 Data and simulation inputs accompanying:
 
