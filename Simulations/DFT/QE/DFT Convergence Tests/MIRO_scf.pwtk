@@ -1,0 +1,25 @@
+# load the pw.x input from file
+load_fromPWI MIRO101A_pwscf.in
+
+# open a file for writing resulting total energies
+set fid [open etot_vs_ecutrho.dat w]
+
+# loop over different "ecut" values
+foreach ecut {150 200 250 300 350 400 450 500 550 600} {
+
+    # name of I/O files: $name.in & $name.out
+    set name MIRO101_scf_ecutrho-$ecut
+
+    # set the pw.x "ecutrho" variable
+    SYSTEM "ecutrho = $ecut"
+
+    # run the pw.x calculation
+    runPW $name.in
+
+    # extract the "total energy" and write it to file
+    set Etot [::pwtk::pwo::totene $name.out]
+    puts $fid "$ecut $Etot"
+}
+
+close $fid
+
