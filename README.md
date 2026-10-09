@@ -2,7 +2,7 @@
 
 Data and simulation inputs accompanying:
 
-> G.A. González et al., "Thermal Properties of the Nonporous Nonlinear"
+> G.A. González, M. González, R. Blukis, C. Kränkel, Juan M. García-Garfido, F. Herrera, "Understanding Thermal Conductivity in Metal-Organic Framework MIRO-101"
 
 This repository contains the crystal structure of MIRO-101, the classical (LAMMPS) and first-principles (Quantum ESPRESSO, Phonopy, Phono3py) simulation inputs used to compute its thermal properties, and the tabulated data behind each figure of the manuscript (heat capacity, thermal conductivity, phonon dispersion/PDOS and spectral conductivity).
 
